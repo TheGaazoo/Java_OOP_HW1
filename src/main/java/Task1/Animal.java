@@ -44,22 +44,22 @@ public class Animal {
     }
 
     private void fly() { // add fly
-        System.out.println(getClass().getSimpleName() + " fly");
+        System.out.println(getClass().getSimpleName() + "to fly");
     }
 
-    private void swim() { //add swim
-        System.out.println(getClass().getSimpleName() + " swim");
+    private void swim() { // add swim
+        System.out.println(getClass().getSimpleName() + "to swim");
     }
 
-    private void eat() { 
-        System.out.println(getClass().getSimpleName() + " ate");
-    
+    private void eat() {
+        System.out.println(getClass().getSimpleName() + "to ate");
+
     }
+
     private void sleep() {
         System.out.println(getClass().getSimpleName() + " go to bed");
     }
 
-    
     private void play() {
         System.out.println(getClass().getSimpleName() + " go to play");
     }
@@ -72,12 +72,23 @@ public class Animal {
         toGo();
         swim();
     }
+
     public void FishliveCycle() {
         toWakeUp();
         eat();
         swim();
         sleep();
     }
+
+    public void BirdliveCycle() {
+        toWakeUp();
+        eat();
+        fly();
+        swim();
+        toGo();
+        sleep();
+    }
+
     public void breathe() {
         System.out.println("breathe");
     }

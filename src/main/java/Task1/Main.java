@@ -10,6 +10,9 @@ public class Main {
         Fish fish = new Fish(); //добавили рыбу
         fish.setName("MEG");
 
+        Duck duck = new Duck(); //добавили  утку
+        duck.setName("Donald");
+
         Monkey monkey = new Monkey(); //добавили обезьяну
         monkey.setName("Nikodim");
 
@@ -25,10 +28,14 @@ public class Main {
         animals.add(cat);
         animals.add(dog);
         animals.add(fish);
+        animals.add(duck);
         System.out.println(monkey.getName());
         monkey.animalliveCycle();
        // dog.breathe();
         System.out.println(fish.getName());
         fish.FishliveCycle();
+        
+        System.out.println(duck.getName());
+        duck.BirdliveCycle();
     }
 }
